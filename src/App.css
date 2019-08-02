@@ -1,0 +1,109 @@
+.App {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fae3d9;
+}
+
+
+#text-container {
+  position: absolute; 
+  top: 0; 
+  left: 0;
+  height:calc(100% - 4rem);
+  width: 100%;
+  /* background-color: aqua; */
+  overflow: scroll;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-card {
+  margin: 1.5rem;
+  background-color: #ffb6b9;
+  width: 50vw;
+  /* box-shadow: 2px 2px 3px #999;  */
+  animation: slidein;
+  animation-duration: 1s;
+  border-radius: 0.5rem;
+}
+
+.response-card {
+  margin: 1.5rem;
+  background-color: #bbded6;
+
+  width: 50vw;
+  border-radius: 0.5rem;
+  animation: slidein;
+  animation-duration: 1s;
+  /* box-shadow: 2px 2px 3px #999;  */
+}
+
+.text {
+  padding: 0.5rem;
+  color: black;
+}
+
+#bottom-bar {
+  position:fixed;
+	width: 100vw;
+  height: auto;
+  left: 0px;
+	bottom:0px;
+	background-color:#8ac6d1;
+	color:#FFF;
+	/* box-shadow: 2px 2px 3px #999;  */
+}
+
+.speak-button {
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0 0 0 0.5rem; 
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+  background-color: #ffb6b9;
+  text-align: center;
+  transition: background 250ms ease-in-out, 
+              transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.button-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+/* button:hover,
+button:focus {
+    background: #0053ba;
+} */
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+
+  }
+
+  to {
+    margin-left: 0% + 1.5rem;
+  }
+}
